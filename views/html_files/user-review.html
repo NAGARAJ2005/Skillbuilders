@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Submit Review</title>
+  <link rel="stylesheet" href="user-review.css">
+	<link rel="stylesheet" href="user-index.css">
+</head>
+<body>
+    <header class="header">
+        <div class="website-logo-container">
+            <img class="website-logo" src="images/header-images/website-logo.jpg" alt="Skill Builders logo">
+            <div class="website-name"><a href="index-page.html">Skill Builders</a></div>
+        </div>
+        <div class="search-box-container">
+            <button class="search-button"><img class="search-icon" src="images/header-images/search-icon.svg" alt="Search"></button>
+            <input class="search-box" type="text" placeholder="Search courses">
+        </div>
+        <nav class="header-links">
+            <a href="user-uploaded-courses.html">My courses</a>
+            <a href="instructor-login.html">Teach Here</a>
+            <a href="about-us.html">About</a>
+            <div class="cart-logo-container">
+                <a href="user-cart-courses.html"><img class="logo" src="images/header-images/cart-logo.png" alt="Cart"></a>
+            </div>
+            <div class="favourite-courses-image-container">
+                <a href="user-favourite-courses.html"><img class="logo" src="images/header-images/favourite-courses-image.png" alt="favourite courses"></a>
+            </div>
+            <div class="profile-image-container">
+                <a href="user-page.html"><img class="logo" src="images/header-images/profile-logo.svg" alt="Profile"></a>
+            </div>
+        </nav> 
+    </header>
+    <!-- Header ends -->
+  <!-- Main review form -->
+  <div class="review-container">
+    <h1 class="heading">Submit Your Review</h1>
+    
+    <!-- Review form -->
+    <form action="insertreview" method="POST" class="review-form">
+      
+      <!-- Rating: Stars as buttons -->
+      <label for="rating">Give rating :</label><br>
+      <div class="rating-container">
+        <button type="button" class="star-btn" data-value="1">&#9733;</button>
+        <button type="button" class="star-btn" data-value="2">&#9733;</button>
+        <button type="button" class="star-btn" data-value="3">&#9733;</button>
+        <button type="button" class="star-btn" data-value="4">&#9733;</button>
+        <button type="button" class="star-btn" data-value="5">&#9733;</button>
+      </div>
+      
+      <!-- Hidden input to store rating -->
+      <input type="hidden" id="rating" name="rating" value="0">
+
+      <!-- Review Text -->
+      <label for="review">Review:</label><br>
+      <textarea id="review" name="review" rows="4" cols="50" maxlength="300" placeholder="Write your review here..." required></textarea><br><br>
+      
+      <!-- Submit Button -->
+      <div class="submit-btn-container">
+        <button type="submit" class="submit-btn">Submit Review</button>
+      </div>
+    </form>
+  </div>
+  
+  <footer class="footer">
+        <img class="website-logo" src="images\header-images\website-logo.jpg">
+        <div class="copyright-text">Copyright &#169; 2024 SkillBuilders. All rights reserved</div>
+    </footer>
+
+  <script src="user-review.js"></script>
+	<script src="search-redirect.js"></script>
+</body>
+</html>

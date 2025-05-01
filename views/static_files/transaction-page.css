@@ -1,0 +1,112 @@
+body {
+  font-family: Roboto, Arial;
+  margin: 0;
+  padding: 0; /* Remove top padding since header is fixed */
+  background-color: rgb(247, 247, 247);
+  display: flex;
+  flex-direction: column; /* Make body a flex container */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  height: 75px;
+  border-bottom: 2px solid rgb(201, 202, 201);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, h2 {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: black;
+}
+
+.course-details-container {
+  max-width: 1200px;
+  margin: 20px auto 0 auto; /* Add top margin to compensate for fixed header */
+  padding: 20px;
+  text-align: center;
+  min-height: 520px;
+}
+
+.nav-buttons {
+  margin: 20px;
+}
+
+.nav-btn {
+  width: 150px;
+  height: 35px;
+  background-color: #3de675;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.nav-btn:hover {
+  background-color: rgb(57, 168, 123);
+}
+
+.module-container {
+  background-color: white;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 25px;
+  border-radius: 4px;
+  border: 1px solid rgb(91, 89, 89);
+}
+
+input {
+  margin-top: 8px;
+  padding: 5px; /* Reduce padding for smaller size */
+  font-size: 14px; /* Adjust font size */
+  width: 80%; /* Limit width to ensure compact appearance */
+  border: 1px solid rgb(160, 151, 151);
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+button.submit-button {
+  width: 150px;
+  height: 35px;
+  background-color: #3de675;
+  color: black;
+  border: none;
+  font-weight: bold;
+  font-size: 14px;
+  margin: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button.submit-button:hover {
+  background-color: rgb(45, 160, 114);
+}
+
+.footer {
+  background-color: rgb(45, 47, 49);
+  color: white;
+  padding: 0 20px;
+  text-align: center;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto; /* Push the footer to the bottom of the page */
+}
+

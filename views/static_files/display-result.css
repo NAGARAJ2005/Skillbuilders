@@ -1,0 +1,51 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+	height: 50vh;
+}
+
+.progress-container {
+    margin-top: 204px;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+p {
+    color: #666;
+    font-size: 18px;
+    margin: 10px 0 20px;
+}
+
+.action-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.action-button:hover {
+    background-color: #45a049;
+}
+
+.go-back-link {
+    color: #007BFF;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.go-back-link:hover {
+    text-decoration: underline;
+}

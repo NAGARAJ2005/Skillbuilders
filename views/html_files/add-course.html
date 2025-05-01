@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Course</title>
+    <link rel="stylesheet" href="add-course.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header starts -->
+    <header class="header">
+      <div class="website-logo-container">
+          <img class="website-logo" src="images/header-images/website-logo.jpg" alt="Skill Builders logo">
+          <div class="website-name"><a href="user-index.html">Skill Builders</a></div>
+      </div>
+      <div class="search-box-container">
+          <img class="search-icon" src="images/header-images/search-icon.svg" alt="Search">
+          <input class="search-box" type="text" placeholder="Search courses">
+      </div>
+      <nav class="header-links">
+          <a href="instructor-uploaded-courses.html">My courses</a>
+          <a href="user-login.html">Learn Here</a>
+          <a href="about-us.html">About</a>
+          <div class="cart-logo-container">
+              <a href="user-login.html"><img class="logo" src="images/header-images/cart-logo.png" alt="Cart"></a>
+          </div>
+          <div class="favourite-courses-image-container">
+              <a href="user-login.html"><img class="logo" src="images/header-images/favourite-courses-image.png" alt="favourite courses"></a>
+          </div>
+          <div class="profile-image-container">
+              <a href="instructor-page.html"><img class="logo" src="images/header-images/profile-logo.svg" alt="Profile"></a>
+          </div>
+      </nav> 
+  	</header>
+    <!-- Header ends -->
+
+    <!-- Main Starts-->
+    <div class="nav-buttons">
+        <button class="nav-btn course-details-btn active-button">Course Details</button>
+        <button class="nav-btn course-contents-btn">Course Contents</button>
+    </div>
+
+    <!-- Section for Course Details -->
+    <form id="course-details-form" onsubmit="return false;"> <!-- Prevent form submission from reloading the page -->
+
+        <div class="course-details-container active">
+            <div class="instruction-container">
+                <span class="tab"></span>
+               Use this page to upload your courses. Fill all the fields carefully. If you have any doubts about how to upload a course, click the <a class='instruction-link' href="instruction.html">'How to upload a course in SkillBuilders?'</a> link. Your submission will be reviewed by our admin group. You can view feedback, details, and the status of your uploaded courses under the 'Uploaded Courses' and 'Courses in Progress' options in your personal page navigation.
+            </div>
+
+            <div class="input-field-container">
+                <label for="course-title">Course Title :</label><br>
+                <input type="text" id="course-title" name="courseTitle" placeholder="Course Title">
+            </div>
+    
+            <div class="input-field-container">
+                <label for="course-description">Course Description :</label><br>
+                <textarea id="course-description" name="ourseDescription" rows="4" cols="50" placeholder="Enter Course Description"></textarea>
+            </div>
+    
+            <div class="input-field-container">
+                <label for="course-duration">Course Duration (in Hours) :</label><br>
+                <input type="text" id="course-duration" name="courseDuration" placeholder="Course Duration">
+            </div>
+    
+            <div class="input-field-container">
+                <label for="modules-count">Number of Modules :</label><br>
+                <input type="text" id="modules-count" name="modulesCount" placeholder="Modules Count">
+            </div>
+    
+            <div class="input-field-container">
+                <label for="thumbnail">Thumbnail :</label><br>
+                <input type="text" id="thumbnail" name="thumbnail" placeholder="Thumbnail Path">
+            </div>
+    
+            <div class="input-field-container">
+                <label for="course-price">Course Price :</label><br>
+                <input type="text" id="course-price" name="coursePrice" placeholder="Course Price">
+            </div>
+    
+            <div class="input-field-container">
+                <label for="streams">Select related streams:</label><br>
+                <select id="streams" name="streams" multiple size="8">
+                    <option value="webdev">Web Development</option>
+                    <option value="javadev">Java Development</option>
+                    <option value="datasci">Data Science</option>
+                    <option value="ai">Artificial Intelligence</option>
+                    <option value="ml">Machine Learning</option>
+                    <option value="cybersec">Cybersecurity</option>
+                    <option value="cloudcomputing">Cloud Computing</option>
+                    <option value="databases">Database Management</option>
+                    <option value="mobiledev">Mobile App Development</option>
+                    <option value="gameDev">Game Development</option>
+                    <option value="blockchain">Blockchain Technology</option>
+                    <option value="iot">Internet of Things (IoT)</option>
+                    <option value="uiux">UI/UX Design</option>
+                    <option value="datastructures">Data Structures and Algorithms</option>
+                    <option value="networking">Networking</option>
+                    <option value="devops">DevOps</option>
+                    <option value="softwaretesting">Software Testing</option>
+                    <option value="bigdata">Big Data</option>
+                    <option value="fullstack">Full Stack Development</option>
+                    <option value="frontend">Frontend Development</option>
+                    <option value="backend">Backend Development</option>
+                    <option value="robotics">Robotics</option>
+                    <option value="computerVision">Computer Vision</option>
+                    <option value="augmentedReality">Augmented Reality (AR)</option>
+                    <option value="virtualReality">Virtual Reality (VR)</option>
+                    <option value="businessanalytics">Business Analytics</option>
+                    <option value="digitalmarketing">Digital Marketing</option>
+                    <option value="projectmanagement">Project Management</option>
+
+                </select>
+            </div>
+
+            <div class="input-field-container">
+                <label for="course-prerequisites">Course prerequisite/s :</label><br>
+                <input type="text" id="course-prerequisites" name="coursePrerequisites" placeholder="Enter comma separated texts (For more than one prerequisites)">
+            </div>
+        </div>
+        
+        <div class="course-contents-container">
+            <div class="course-content-description active-description">
+                Please add your course contents carefully. To learn how to use this page, refer to the guide, <a class='instruction-link' href="">'How to upload a course in SkillBuilders?'</a>. This guide will help you upload your course contents correctly, ensuring fast deployment on our website. Practicing this process will make it easier for you over time.
+            </div>
+
+            <div class="modules-container"></div>
+
+            <button id="add-module-button" class="add-module-btn" type="button">Add Module</button>
+            <button id="remove-module-button" class="remove-module-btn" type="button">Remove Module</button>
+        </div>
+    
+        <button class="submit-button" id="submit-button" type="button">Submit All</button> <!-- Single submission button -->
+    </form>    
+    <!-- Main ends -->
+
+    <!-- Footer starts -->
+    <footer class="footer">
+        <img class="website-logo" src="images/header-images/website-logo.jpg">
+        <div class="copyright-text">Copyright &#169; 2024 SkillBuilders. All rights reserved</div>
+    </footer>
+    <!-- Footer ends -->
+    <script src="add-course.js"></script>
+</body>
+</html>

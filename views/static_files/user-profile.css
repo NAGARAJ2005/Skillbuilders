@@ -1,0 +1,282 @@
+body {
+  font-family: Roboto, Arial;
+  margin: 0;
+  padding-top: 75px;
+  background-color: rgb(247, 247, 247);
+}
+
+/* Header style */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+  height: 75px;
+  border-bottom: 2px solid rgb(201, 202, 201);
+  position: fixed; /* Fix the header at the top */
+  top: 0; /* Stick to the top */
+  left: 0; /* Ensure it spans from the left */
+  right: 0; /* Ensure it spans to the right */
+  z-index: 1000; /* Ensure the header stays on top of other content */
+  background-color: white; /* Ensure it's visible even with content underneath */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.website-logo-container {
+  display: flex; align-items: center;
+  gap: 30px;
+  margin-right: 30px;
+}
+
+    .website-logo {
+      height: 60px;
+      width: 85px;
+    }
+
+    .website-name {
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 1.75rem;
+      color: black;
+    }
+
+.search-box-container {
+  flex: 1;
+  display: flex; align-items: center;
+  max-width: 400px;
+  padding: 5px 10px;
+  border: 1px solid rgb(122, 121, 121);
+  border-radius: 35px;
+  background-color: rgb(246, 246, 246);
+}
+
+.search-icon {
+  height: 22px;
+  margin-right: 10px;
+}
+
+.search-box {
+  width: 100%;      
+  height: 35px;
+  font-size: 15px;
+  border: none;
+  background-color: transparent;
+}
+
+.search-box:focus {
+  outline: none;
+}
+
+.search-button {
+	background: transparent;
+	border: none;
+	cursor: pointer;     /* Set a text color */
+}
+
+.search-button:hover {
+	color: #000;       /* Change text color on hover */
+}
+
+
+.header-links {
+  display: flex; align-items: center;
+  gap: 45px;
+  margin-left: 30px;
+}
+
+.header-links a:hover {
+  color: violet;
+}
+
+.cart-logo-container,
+.favourite-courses-image-container,
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  width: 40px;
+  height: 35px;
+  padding-top: 5px;
+}
+
+.cart-logo-container:hover,
+.favourite-courses-image-container:hover,
+.profile-image-container:hover {
+  background-color: rgb(241, 218, 241);
+}
+
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+  width: 40px;
+  height: 35px;
+  background-color: rgb(228, 220, 220);
+}
+
+.logo {
+  height: 27px;
+}
+
+@media (max-width: 1500px) {
+
+}
+
+@media (max-width: 700px) {
+
+}
+
+/* main body styles*/
+.main {
+  display: flex;
+  max-width: 1000px;
+  margin: 35px auto;
+}
+
+.profile-container {
+  margin-right: 5px;
+  background-color: rgb(159, 255, 255);
+  border-radius: 10px;
+  flex: 25%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.image-container {
+  height: 175px;
+  width: 175px;
+  border-radius: 100px;
+  border: 5px solid white;
+  margin: 75px auto 0px;
+}
+
+.profile-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.edit-profile-btn-container {
+  margin-top: 25px;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.edit-profile-btn {
+  border: none;
+  border-radius: 4px;
+  padding: 5px 27px;
+  background-color: rgb(113, 240, 113);
+  font-size: 14px;
+  color: rgb(38, 35, 35);
+  cursor: pointer;
+}
+
+.edit-profile-btn:hover {
+  background-color: rgb(94, 200, 94);
+}
+
+.input-container {
+  margin-top: 20px;
+  display: flex; align-items: center; justify-content: center;
+}
+
+.profile-input {
+  margin: auto;
+  padding: 5px;
+}
+
+.information-container {
+  padding: 15px;
+  flex: 75%;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.heading {
+  margin: 10px 0px;
+  font-size: 23px;
+  font-weight: bold;
+  color: rgb(80, 79, 79);
+}
+
+.field {
+  padding: 10px 2px;
+  margin: 0px 0px 10px 10px;
+  display: flex;
+  font-size: 15px;
+  font-weight: 200;
+  color: rgb(100, 97, 97);
+  border-bottom: 1px solid rgb(208, 205, 205);
+}
+
+.property {
+  flex: 30%;
+}
+
+.value {
+  flex: 60%;
+  padding-right: 80px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+input {
+  padding: 2px 5px;
+}
+
+select {
+  padding: 10px;
+}
+
+/* CSS for textarea */
+textarea {
+  width: 350px; /* Set the desired width */
+  height: 50px; /* Set the desired height */
+  resize: both; /* Allow users to resize the textarea */
+  border: 1px solid #ccc; /* Add a border */
+  padding: 5px; /* Add padding for better text placement */
+  /*font-size: 15px;  Adjust the font size */
+}
+
+
+.stream {
+  background-color: rgb(239, 239, 239);
+  border-radius: 4px;
+  padding: 3px 10px;
+  margin: 3px;
+}
+
+.edit-button-container {
+  flex: 10%;
+}
+
+.edit-button {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  cursor: pointer;
+  color: rgb(45, 170, 253);
+  background-color: transparent;
+  border: none;
+}
+
+/* footer */
+.footer  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: rgb(45, 47, 49);
+  padding: 0 20px;  
+}
+
+.copyright-text {
+  font-style: Roboto, Arial;
+  color: white;
+}
+
+

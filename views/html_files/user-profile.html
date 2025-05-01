@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User profile</title>
+    <link rel="stylesheet" href="user-profile.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header starts -->
+    <header class="header">
+        <div class="website-logo-container">
+            <img class="website-logo" src="images/header-images/website-logo.jpg" alt="Skill Builders logo">
+            <div class="website-name"><a href="index-page.html">Skill Builders</a></div>
+        </div>
+        <div class="search-box-container">
+            <button class="search-button"><img class="search-icon" src="images/header-images/search-icon.svg" alt="Search"></button>
+            <input class="search-box" type="text" placeholder="Search courses">
+        </div>
+        <nav class="header-links">
+            <a href="user-enrolled-courses.html">My courses</a>
+            <a href="instructor-login.html">Teach Here</a>
+            <a href="about-us.html">About</a>
+            <div class="cart-logo-container">
+                <a href="user-cart-courses.html"><img class="logo" src="images/header-images/cart-logo.png" alt="Cart"></a>
+            </div>
+            <div class="favourite-courses-image-container">
+                <a href="user-favourite-courses.html"><img class="logo" src="images/header-images/favourite-courses-image.png" alt="favourite courses"></a>
+            </div>
+            <div class="profile-image-container">
+                <a href="user-page.html"><img class="logo" src="images/header-images/profile-logo.svg" alt="Profile"></a>
+            </div>
+        </nav> 
+    </header>
+    <!-- Header ends -->
+
+    <!-- Main starts -->
+    <div class="main">
+        <div class="profile-container">
+            <div class="image-container">
+                <img class="profile-image" id="profile" src="images/user-profile-images/user-1-profile.jpg" alt="User Profile Image">
+            </div>
+            <div class="edit-profile-btn-container">
+                <button class="edit-profile-btn">Edit profile</button>
+            </div>
+            <div class="input-container" style="display: none;">
+                <input type="text" class="profile-input" id="profileImageInput" name="profileImage" placeholder="Enter image URL">
+            </div>
+        </div>
+          
+      <div class="information-container">
+        <div class="heading">Profile information</div>
+        <div class="name field">
+            <div class="property">Name</div>
+            <div class="value" id="name"></div>
+            <div class="edit-button-container">
+                <button class="edit-button" id="editname">Edit</button>
+            </div>
+        </div>
+        <div class="gender field">
+            <div class="property">Gender</div>
+            <div class="value" id="gender"></div>
+            <div class="edit-button-container">
+                <button class="edit-button" id="editgender">Edit</button>
+            </div>
+        </div>
+        <div class="summary field">
+            <div class="property">Summary</div>
+            <div class="value" id="professionalSummary"></div>
+            <div class="edit-button-container">
+                <button class="edit-button" id="editprofessionalSummary">Edit</button>
+            </div>
+        </div>
+        <div class="dob field">
+            <div class="property">Date of birth</div>
+            <div class="value" id="dob"></div>
+            <div class="edit-button-container">
+                <button class="edit-button" id="editdob">Edit</button>
+            </div>
+        </div>
+        <div class="phone-number field">
+            <div class="property">Phone number</div>
+            <div class="value" id="phoneNumber"></div>
+            <div class="edit-button-container">
+                <button class="edit-button" id="editphoneNumber">Edit</button>
+            </div>
+        </div>
+        <div class="country field">
+            <div class="property">Country</div>
+            <div class="value" id="country"></div>
+            <div class="edit-button-container">
+                <button class="edit-button" id="editcountry">Edit</button>
+            </div>
+        </div>
+        <div class="city field">
+            <div class="property">City</div>
+            <div class="value" id="city"></div>
+            <div class="edit-button-container">
+                <button class="edit-button" id="editcity">Edit</button>
+            </div>
+        </div>
+        <div class="grade field">
+            <div class="property">Grade</div>
+            <div class="value" id="grade"></div>
+            <div class="edit-button-container">
+                <button class="edit-button" id="editgrade">Edit</button>
+            </div>
+        </div>
+        <div class="current-stream field" style="align-items: center;">
+            <div class="property">Current stream</div>
+            <div class="value" id="stream"></div>
+            <div class="edit-button-container">
+                <button class="edit-button" id="editstream">Edit</button>
+            </div>
+        </div>
+        <div class="interested-streams field">
+            <div class="property">Interested streams</div>
+            <div class="value" id="interestedStreams"></div>
+            <div class="edit-button-container">
+                <button class="edit-button" id="editinterestedStreams">Edit</button>
+            </div>
+        </div>
+        <div class="reset-password field" style="border: none; margin-bottom: 0px;">
+            <div class="property">Reset password</div>
+            <div class="value"><a href="user-login.html" id="resetPassword">Click here</a></div>
+            <div class="edit-button-container"></div>
+        </div>
+      </div>
+    </div>
+    <!-- Main ends -->
+         
+    <!-- Footer starts -->
+    <footer class="footer">
+        <img class="website-logo" src="images/header-images/website-logo.jpg" alt="Skill Builders logo">
+        <div class="copyright-text">Copyright &#169; 2024 SkillBuilders. All rights reserved</div>
+    </footer>
+    <!-- Footer ends -->
+
+    <script src="user-profile.js"></script>
+    <script src="search-redirect.js"></script>
+</body>
+</html>

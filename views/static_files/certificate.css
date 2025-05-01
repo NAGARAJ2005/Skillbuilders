@@ -1,0 +1,122 @@
+/* Certificate Styles */
+.certificate-body {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: #f1f1f1;
+    padding: 100px auto;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.certificate-container {
+    width: 750px;
+    height: 450px;
+    border: 12px solid #337ab7;
+    padding: 20px;
+    background-color: white;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+}
+
+.certificate-header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.certificate-logo {
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    width: 90px;
+}
+
+.certificate-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #000;
+}
+
+.certificate-subtitle {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.certificate-content {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.certificate-recipient {
+    font-family: 'Great Vibes', cursive;
+    font-size: 34px;
+    color: #000;
+    margin: 10px 0;
+}
+
+.certificate-details {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #000;
+    margin-top: 15px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.certificate-footer {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #7f8c8d;
+}
+
+.certificate-signature {
+    position: absolute;
+    bottom: 60px;
+    right: 50px;
+    text-align: center;
+}
+
+.certificate-signature img {
+    width: 120px;
+}
+
+.certificate-signature p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.certificate-website-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #337ab7;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.certificate-footer-date {
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+
+.certificate-footer-rights {
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: #7f8c8d;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Progress & Certificate</title>
+    <link rel="stylesheet" href="display-result.css">
+    <link rel="stylesheet" href="show-courses.css">
+    <link rel="stylesheet" href="certificate.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Main Page Content -->
+    <header class="header">
+        <div class="website-logo-container">
+            <img class="website-logo" src="images/header-images/website-logo.jpg" alt="Skill Builders logo">
+            <div class="website-name"><a href="index-page.html">Skill Builders</a></div>
+        </div>
+        <div class="search-box-container">
+            <button class="search-button"><img class="search-icon" src="images/header-images/search-icon.svg" alt="Search"></button>
+            <input class="search-box" type="text" placeholder="Search courses">
+        </div>
+        <nav class="header-links">
+            <a href="user-uploaded-courses.html">My courses</a>
+            <a href="instructor-login.html">Teach Here</a>
+            <a href="about-us.html">About</a>
+            <div class="cart-logo-container">
+                <a href="user-cart-courses.html"><img class="logo" src="images/header-images/cart-logo.png" alt="Cart"></a>
+            </div>
+            <div class="favourite-courses-image-container">
+                <a href="user-favourite-courses.html"><img class="logo" src="images/header-images/favourite-courses-image.png" alt="favourite courses"></a>
+            </div>
+            <div class="profile-image-container">
+                <a href="user-page.html"><img class="logo" src="images/header-images/profile-logo.svg" alt="Profile"></a>
+            </div>
+        </nav> 
+    </header>
+
+    <main>
+        <div id="progress-container" class="progress-container">
+            <!-- Content for Course Progress goes here -->
+        </div>
+    </main>
+
+    
+
+    <!-- Certificate Section -->
+    <div class="certificate-body" style="display: none;">
+        <div class="certificate-container">
+            <img class="certificate-logo" src="images/certificate-images/certificate-logo.jpg" alt="Logo">
+            <div class="certificate-header">
+                <div class="certificate-title">Certificate of Completion</div>
+                <div class="certificate-subtitle">This document verifies that</div>
+            </div>
+            <div class="certificate-content">
+                <div class="certificate-recipient"><span class='username'></span></div>
+                <div class="certificate-details">
+                    has successfully completed the requirements of the professional course, showcasing an exceptional grasp of the course materials. The student has demonstrated a profound understanding of all key concepts and has passed all criteria required to excel in the <span class='course-name'></span> field. With expertise now in hand, Student is equipped to contribute confidently to <span class='course-name'></span>-related industries and embrace the challenges ahead.
+                </div>
+            </div>
+            <div class="certificate-website-name">Skill Builders</div>
+            <div class="certificate-footer">
+                <div class="certificate-footer-date">Date: <span class='date'></span></div>
+            </div>
+            <div class="certificate-signature">
+                <img src="images/certificate-images/e-sign.png" alt="Signature">
+                <p>Course Coordinator</p>
+            </div>
+            <div class="certificate-footer-rights">© 2024 SkillBuilders | All Rights Reserved</div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <img class="website-logo" src="images/header-images/website-logo.jpg" alt="Website Logo">
+        <div class="copyright-text">Copyright &#169; 2024 SkillBuilders. All rights reserved</div>
+    </footer>
+
+    <script src="display-result.js"></script>
+    <script src="search-redirect.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</body>
+</html>

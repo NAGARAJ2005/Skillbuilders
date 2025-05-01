@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction</title>
+    <link rel="stylesheet" href="transaction-page.css">
+   <link rel="stylesheet" href="user-index.css">
+</head>
+<body>
+    <header class="header">
+        <div class="website-logo-container">
+            <img class="website-logo" src="images/header-images/website-logo.jpg" alt="Skill Builders logo">
+            <div class="website-name"><a href="index-page.html">Skill Builders</a></div>
+        </div>
+        <div class="search-box-container">
+            <button class="search-button"><img class="search-icon" src="images/header-images/search-icon.svg" alt="Search"></button>
+            <input class="search-box" type="text" placeholder="Search courses">
+        </div>
+        <nav class="header-links">
+            <a href="user-uploaded-courses.html">My courses</a>
+            <a href="instructor-login.html">Teach Here</a>
+            <a href="about-us.html">About</a>
+            <div class="cart-logo-container">
+                <a href="user-cart-courses.html"><img class="logo" src="images/header-images/cart-logo.png" alt="Cart"></a>
+            </div>
+            <div class="favourite-courses-image-container">
+                <a href="user-favourite-courses.html"><img class="logo" src="images/header-images/favourite-courses-image.png" alt="favourite courses"></a>
+            </div>
+            <div class="profile-image-container">
+                <a href="user-page.html"><img class="logo" src="images/header-images/profile-logo.svg" alt="Profile"></a>
+            </div>
+        </nav> 
+    </header>
+
+    <!-- Main Container -->
+    <div class="course-details-container active">
+        <h1>Choose Transaction Type</h1>
+        <div class="nav-buttons">
+            <button class="nav-btn" onclick="renderTransactionForm('debit')">Debit Card</button>
+            <button class="nav-btn" onclick="renderTransactionForm('credit')">Credit Card</button>
+            <button class="nav-btn" onclick="renderTransactionForm('upi')">UPI</button>
+        </div>
+        <div id="transaction-form" class="module-container">
+            <!-- Dynamic form will appear here -->
+        </div>
+    </div>
+
+			<footer class="footer">
+        <img class="website-logo" src="images\header-images\website-logo.jpg">
+        <div class="copyright-text">Copyright &#169; 2024 SkillBuilders. All rights reserved</div>
+    </footer>
+    <script src="transaction-page.js"></script>
+    <script src="search-redirect.js"></script>
+</body>
+</html>
